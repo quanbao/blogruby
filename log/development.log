@@ -1,0 +1,588 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (22.0ms) admin['$cmd'].find({:isMaster=>1}).limit(-1)
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (11.0ms) admin['$cmd'].find({:isMaster=>1}).limit(-1)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-04-08 22:41:26 +0700
+
+ActionController::RoutingError (No route matches [GET] "/products"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/article" for 127.0.0.1 at 2014-04-08 22:41:33 +0700
+
+ActionController::RoutingError (No route matches [GET] "/article"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-04-08 22:41:42 +0700
+Processing by ArticlesController#index as HTML
+MONGODB (177.0ms) blog_development['$cmd'].find({:create=>"articles"}).limit(-1)
+MONGODB (11.0ms) blog_development['articles'].find({})
+  Rendered articles/index.html.erb within layouts/application (188.0ms)
+Warning. Error encountered while saving cache C:/Users/quanc_000/Documents/Aptana Studio 3 Workspace/blog/tmp/cache/sass/25e139c9850f84e7ef3c2565f5b22e68e6b4fc5c/articles.css.scssc: can't dump anonymous class #<Class:0x51b9460>
+Compiled articles.css  (30ms)  (pid 5416)
+Warning. Error encountered while saving cache C:/Users/quanc_000/Documents/Aptana Studio 3 Workspace/blog/tmp/cache/sass/25e139c9850f84e7ef3c2565f5b22e68e6b4fc5c/scaffolds.css.scssc: can't dump anonymous class #<Class:0x51b9460>
+Compiled scaffolds.css  (20ms)  (pid 5416)
+Compiled application.css  (90ms)  (pid 5416)
+Compiled jquery.js  (1ms)  (pid 5416)
+Compiled jquery_ujs.js  (1ms)  (pid 5416)
+Compiled articles.js  (255ms)  (pid 5416)
+Compiled application.js  (418ms)  (pid 5416)
+Completed 200 OK in 810ms (Views: 810.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /jquery_ujs.js - 200 OK (12ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /articles.css - 200 OK (2ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /articles.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 22:41:43 +0700
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (25.0ms)
+  Rendered articles/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:09 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GBlstCRmeAF+Vg3CyFICHdGtpFOXtKMONsAyt/PtQE=", "article"=>{"name"=>"asdf", "content"=>"adfg"}, "commit"=>"Create Article"}
+MONGODB (0.0ms) blog_development['articles'].insert({"_id"=>BSON::ObjectId('534418d7eeba001528000002'), "name"=>"asdf", "content"=>"adfg"})
+Redirected to http://localhost:3000/articles/534418d7eeba001528000002
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 22:42:15 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (11.0ms) admin['$cmd'].find({:isMaster=>1}).limit(-1)
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (11.0ms) admin['$cmd'].find({:isMaster=>1}).limit(-1)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-08 23:02:26 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['$cmd'].find({:create=>"articles"}).limit(-1)
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (19.0ms)
+Warning. Error encountered while saving cache C:/Users/quanc_000/Documents/Aptana Studio 3 Workspace/blog/tmp/cache/sass/25e139c9850f84e7ef3c2565f5b22e68e6b4fc5c/comments.css.scssc: can't dump anonymous class #<Class:0x51b9460>
+Compiled comments.css  (0ms)  (pid 5416)
+Compiled application.css  (28ms)  (pid 5416)
+Compiled comments.js  (132ms)  (pid 5416)
+Compiled application.js  (158ms)  (pid 5416)
+Completed 200 OK in 274ms (Views: 251.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /comments.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /comments.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:27 +0700
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Processing by ArticlesController#index as HTML
+MONGODB (11.0ms) blog_development['articles'].find({})
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /articles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:32 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:35 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/articles/534418d7eeba001528000002/comments" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GBlstCRmeAF+Vg3CyFICHdGtpFOXtKMONsAyt/PtQE=", "comment"=>{"name"=>"sdga", "content"=>"adfhert"}, "commit"=>"Create Comment", "article_id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0.0ms) blog_development['articles'].update({"_id"=>BSON::ObjectId('534418d7eeba001528000002')}, {"$push"=>{"comments"=>{"_id"=>BSON::ObjectId('53441da5eeba001528000005'), "name"=>"sdga", "content"=>"adfhert"}}})
+Redirected to http://localhost:3000/articles/534418d7eeba001528000002
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:45 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/articles/534418d7eeba001528000002/comments" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GBlstCRmeAF+Vg3CyFICHdGtpFOXtKMONsAyt/PtQE=", "comment"=>{"name"=>"afhre", "content"=>"ahfer"}, "commit"=>"Create Comment", "article_id"=>"534418d7eeba001528000002"}
+MONGODB (12.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0.0ms) blog_development['articles'].update({"_id"=>BSON::ObjectId('534418d7eeba001528000002')}, {"$push"=>{"comments"=>{"_id"=>BSON::ObjectId('53441dabeeba001528000007'), "name"=>"afhre", "content"=>"ahfer"}}})
+Redirected to http://localhost:3000/articles/534418d7eeba001528000002
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (11.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-08 23:02:51 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+Connecting to database specified by database.yml
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (34.0ms) admin['$cmd'].find({:isMaster=>1}).limit(-1)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-04-24 09:49:30 +0700
+Served asset /rails.png - 200 OK (38ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-04-24 09:49:41 +0700
+Processing by ArticlesController#index as HTML
+MONGODB (12.0ms) blog_development['$cmd'].find({:create=>"articles"}).limit(-1)
+MONGODB (11.0ms) blog_development['articles'].find({})
+  Rendered articles/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 236ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /articles.css - 200 OK (4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /comments.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /articles.js - 200 OK (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 09:49:42 +0700
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (66.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 195ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 09:52:12 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/articles/534418d7eeba001528000002/comments" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0e8vTLHY5sqAQz/7y/hgstv0SFy2SDTsW15D7M+cwlM=", "comment"=>{"name"=>"dfg", "content"=>"rtuui"}, "commit"=>"Create Comment", "article_id"=>"534418d7eeba001528000002"}
+MONGODB (12.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+MONGODB (1.0ms) blog_development['articles'].update({"_id"=>BSON::ObjectId('534418d7eeba001528000002')}, {"$push"=>{"comments"=>{"_id"=>BSON::ObjectId('53587f56eeba0010d4000002'), "name"=>"dfg", "content"=>"rtuui"}}})
+Redirected to http://localhost:3000/articles/534418d7eeba001528000002
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/534418d7eeba001528000002" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"534418d7eeba001528000002"}
+MONGODB (21.0ms) blog_development['articles'].find({:_id=>BSON::ObjectId('534418d7eeba001528000002')}).limit(-1).sort([[:_id, :asc]])
+  Rendered articles/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 10:04:54 +0700
+Served asset /application.js - 304 Not Modified (0ms)
